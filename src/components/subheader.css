@@ -1,0 +1,11 @@
+.Subheader {
+    background-color: #555;
+    margin-bottom: 6px;
+}
+
+.Subheader h2 {
+    margin: 0;
+    padding: 10px;
+    color: #ccc;
+    margin-left: 65px;
+}

@@ -1,0 +1,18 @@
+.image-container.album-link .gatsby-image-outer-wrapper {
+    height: calc(100% - 25px);
+}
+
+.image-container.album-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.album-link .album-name {
+    height: 20px;
+    padding-top: 5px;
+    font-weight: 600;
+    border-top: 1px solid #ddd;
+    background-color: rgba(0,0,0,0.05);
+    margin: -1px -6px -6px -6px;
+    padding: 6px;
+}
