@@ -1,6 +1,7 @@
 .Subheader {
     background-color: #555;
     margin-bottom: 6px;
+    position: relative;
 }
 
 .Subheader h2 {
@@ -8,4 +9,65 @@
     padding: 10px;
     color: #ccc;
     margin-left: 65px;
+}
+
+.Subheader .menu {
+    float: right;
+}
+
+.Subheader .menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .Subheader .menu * {
+        display: none;
+    }
+    .Subheader .menu-icon {
+        position: absolute;
+        left: 15px;
+        top: 8px;
+        display: block;
+    }
+    .Subheader .menu {
+        position: relative;
+    }
+
+    .Subheader .menu.responsive {
+        position: absolute;
+        top: 48px;
+        left: 0px;
+        z-index: 10;
+        width: 100%;
+    }
+
+    .Subheader .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        background-color: #777;
+        border-width: 1px;
+        border-radius: 0px;
+        top: 0;
+        padding: 8px 8px 8px 75px;
+    }
+
+    .Subheader .menu.responsive a:hover {
+        background-color: #888;
+    }
+}
+
+.Subheader .menu a {
+    color: inherit;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 4px 8px;
+    position: relative;
+    top: -2px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.Subheader .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1)
 }

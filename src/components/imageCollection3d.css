@@ -1,0 +1,61 @@
+.ImageCollection3d {
+    position: relative;
+    perspective: 1000px;
+    margin: 10% 0;
+    padding: 0 calc(50% - 150px);
+    zoom: 0.5;
+    overflow: hidden;
+}
+
+.ImageCollection3d,
+.image-collection.image-collection-3d,
+.image-collection.image-collection-3d .image-container {
+    width: 300px;
+    height: 400px;
+}
+
+.image-collection.image-collection-3d {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    display: block;
+    flex-wrap: unset;
+    justify-content: unset;
+    transform: translateZ(-690px) rotateY(0deg);
+}
+
+.image-collection.image-collection-3d .image-container {
+    position: absolute;
+    margin: 0;
+    transition: transform 1s, opacity 1s;
+    pointer-events: none;
+    transform: rotateY(0deg) translateZ(690px);
+}
+
+.image-collection.image-collection-3d .image-container .gatsby-image-outer-wrapper {
+    max-height: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .ImageCollection3d {
+        zoom: 0.6;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .ImageCollection3d {
+        zoom: 0.8;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .ImageCollection3d {
+        zoom: 1;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .ImageCollection3d {
+        zoom: 1.2;
+    }
+}
